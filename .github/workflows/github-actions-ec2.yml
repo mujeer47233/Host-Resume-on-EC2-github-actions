@@ -1,6 +1,7 @@
 name: Push-to-EC2
 
 # Trigger deployment only on push to main branch
+#testing
 on:
   push:
     branches:
@@ -36,3 +37,4 @@ jobs:
             sudo systemctl enable apache2
             cd home
             sudo mv * /var/www/html
+            
